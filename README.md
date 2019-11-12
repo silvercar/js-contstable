@@ -5,14 +5,19 @@
 ![JS Constable logo](https://i.imgur.com/lJ4lgLD.png)
 
 ## Table of Contents <!-- omit in toc -->
+- [Background](#background)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Node 4.x+](#node-4x)
-    - [hapi](#hapi)
   - [React](#react)
 - [FAQ](#faq)
 - [Support](#support)
 - [License](#license)
+
+## Background
+The goal of this project is to not only get clean code, but also a more uniformly-formatted codebase to help devs more easily move between projects, especially in a siloed multi-team product development department.
+
+These linting rules are largely derived from [Airbnb's Javascript Style Guide](https://github.com/airbnb/javascript) with some minor modifications mostly related to strictness (such as warning instead of errors) for the sake of development speed. Much of the linting rules are covered in-depth in in the Airbnb Style Guide.
 
 ## Installation
 Drop `.eslintrc` into the base level of your project.
@@ -26,9 +31,7 @@ The example apps aren't intended to serve as a boilerplate for new apps as they 
 
 ### Node 4.x+
 
-#### hapi
-
-Check out the `.eslintrc` examples for [typescript](ts/node/hapi/.eslintrc) and [javascript](js/node/hapi/.eslintrc), along with the example "Hello World" projects that go along with them.
+Check out the `.eslintrc` examples for [typescript](ts/node/hapi/.eslintrc) and [javascript](js/node/hapi/.eslintrc), along with the example "Hello World" hapi projects that go along with them.
 
 ### React
 
