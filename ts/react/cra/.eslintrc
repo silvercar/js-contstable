@@ -7,8 +7,10 @@
     "node": true,
     "commonjs": true
   },
+  "parser": "@typescript-eslint/parser",
   "extends": [
-    "airbnb"
+    "airbnb-typescript",
+    "react-app"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -54,6 +56,29 @@
     "import/prefer-default-export": 0,
     "prefer-destructuring": 0,
     "no-console": 0,
+
+    // Typescript
+    // -- Error
+    "@typescript-eslint/indent": ["error", 2],
+    // -- Warning
+    "@typescript-eslint/type-annotation-spacing": "warn",
+    "@typescript-eslint/camelcase": 1,
+    // -- Off
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-member-accessibility": 0,
+
+    // React
+    // -- Error
+    "react/jsx-uses-vars": 2,
+    "react-hooks/rules-of-hooks": "error",
+    // -- Warning
+    "jsx-a11y/no-noninteractive-element-interactions": 1,
+    "react/no-multi-comp": [1, { "ignoreStateless": true }],
+    "react-hooks/exhaustive-deps": "warn",
+    // -- Off
+    "react/destructuring-assignment": 0,
+    "react/no-array-index-key": 0,
+    "react/prefer-stateless-function": 0
   }
 }
   
