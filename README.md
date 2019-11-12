@@ -8,19 +8,31 @@
 - [Installation](#installation)
 - [Usage](#usage)
   - [Node 4.x+](#node-4x)
+    - [hapi](#hapi)
   - [React](#react)
 - [FAQ](#faq)
 - [Support](#support)
 - [License](#license)
 
 ## Installation
+Drop `.eslintrc` into the base level of your project.
 
+Note that, infrequently, additional setup might need to be done in your IDE to run, for example [ESLinting on save with TypeScript Create React App in VSCode](https://create-react-app.dev/docs/setting-up-your-editor/).
 
 ## Usage
+This is intended to serve as a general guideline for ESLint throughout Silvercar projects wherever JS/TS is concerned. If you need to change linting rules, go ahead, but please consider contributing it back to this repo so that other projects may benefit.
+
+The example apps aren't intended to serve as a boilerplate for new apps as they might have fallen out-of-date, but more as a PoC for working apps that also pass linting (yes, it *is* possible).
 
 ### Node 4.x+
 
+#### hapi
+
+Check out the `.eslintrc` examples for [typescript](ts/node/hapi/.eslintrc) and [javascript](js/node/hapi/.eslintrc), along with the example "Hello World" projects that go along with them.
+
 ### React
+
+Check out the `.eslintrc` examples for [typescript](ts/react/cra/.eslintrc) and [javascript](js/react/cra/.eslintrc), along with the example Create React App projects that go along with them.
 
 ---
 
