@@ -1,0 +1,19 @@
+{
+  "name": "hapi-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0"
+  },
+  "devDependencies": {
+    "@types/hapi": "^18.0.3",
+    "@types/node": "^12.12.7",
+    "typescript": "^3.7.2"
+  }
+}

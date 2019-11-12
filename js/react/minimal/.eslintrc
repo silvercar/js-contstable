@@ -1,0 +1,85 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true,
+    "jasmine": true,
+    "node": true,
+    "commonjs": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "afterAll": false,
+    "afterEach": false,
+    "beforeAll": false,
+    "beforeEach": false,
+    "context": false,
+    "describe": false,
+    "expect": false,
+    "it": false,
+    "jest": false,
+    "test": false
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "markdown"
+  ],
+  "rules": {
+    // General
+    // -- Error
+    "comma-dangle": ["error", "always-multiline"],
+    "no-unused-expressions": [2, { "allowShortCircuit": true }],
+    "space-unary-ops": 2,
+    // -- Warning
+    "class-methods-use-this": 1,
+    "no-else-return": 1,
+    "no-underscore-dangle": 1,
+    "semi": [1, "always"],
+    // -- Off
+    "implicit-arrow-linebreak": 0,
+    "consistent-return": 0,
+    "default-case": 0,
+    "lines-between-class-members": ["off"],
+    "no-shadow": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "prefer-destructuring": 0,
+
+    // Typescript
+    // -- Error
+    "@typescript-eslint/indent": ["error", 2],
+    // -- Warning
+    "@typescript-eslint/type-annotation-spacing": "warn",
+    // -- Off
+    "@typescript-eslint/camelcase": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-member-accessibility": 0,
+
+    // React
+    // -- Error
+    "react/jsx-uses-vars": 2,
+    "react-hooks/rules-of-hooks": "error",
+    // -- Warning
+    "jsx-a11y/no-noninteractive-element-interactions": 1,
+    "react/no-multi-comp": [1, { "ignoreStateless": true }],
+    "react-hooks/exhaustive-deps": "warn",
+    // -- Off
+    "react/destructuring-assignment": 0,
+    "react/no-array-index-key": 0,
+    "react/prefer-stateless-function": 0
+  }
+}
+  
