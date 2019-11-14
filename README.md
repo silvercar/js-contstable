@@ -8,7 +8,7 @@
 - [Background](#background)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Node 4.x+](#node-4x)
+  - [~~Node 4.x+~~ WIP](#node-4x-wip)
   - [React](#react)
 - [FAQ](#faq)
 - [Support](#support)
@@ -20,22 +20,31 @@ The goal of this project is to not only get clean code, but also a more uniforml
 These linting rules are largely derived from [Airbnb's Javascript Style Guide](https://github.com/airbnb/javascript) with some minor modifications mostly related to strictness (such as warning instead of errors) for the sake of development speed. Much of the linting rules are covered in-depth in in the Airbnb Style Guide.
 
 ## Installation
-Drop `.eslintrc` into the base level of your project.
-
-Note that, infrequently, additional setup might need to be done in your IDE to run, for example [ESLinting on save with TypeScript Create React App in VSCode](https://create-react-app.dev/docs/setting-up-your-editor/).
+Installation *will* be as easy as `npm i` once this module is published to NPM.
 
 ## Usage
 This is intended to serve as a general guideline for ESLint throughout Silvercar projects wherever JS/TS is concerned. If you need to change linting rules, go ahead, but please consider contributing it back to this repo so that other projects may benefit.
 
-The example apps aren't intended to serve as a boilerplate for new apps as they might have fallen out-of-date, but more as a PoC for working apps that also pass linting (yes, it *is* possible).
+### ~~Node 4.x+~~ WIP
 
-### Node 4.x+
-
-Check out the `.eslintrc` examples for [typescript](ts/node/hapi/.eslintrc) and [javascript](js/node/hapi/.eslintrc), along with the example "Hello World" hapi projects that go along with them.
 
 ### React
 
-Check out the `.eslintrc` examples for [typescript](ts/react/cra/.eslintrc) and [javascript](js/react/cra/.eslintrc), along with the example Create React App projects that go along with them.
+You probably want to setup your project for easy linting in your `package.json`:
+
+```{json}
+...
+"scripts": {
+  ...
+  "lint": "eslint src/**/*.js src/**/*.jsx src/**/*.ts src/**/*.tsx"
+  ...
+},
+...
+```
+
+You should now be able to easily lint your project manually via `npm run lint`.
+
+Most IDEs should automatically pick up an `.eslintrc` and begin to automatically lint your code on-save or similar, but note that sometimes additional IDE-specific configuration might be needed such as [this example](https://create-react-app.dev/docs/setting-up-your-editor/).
 
 ---
 
