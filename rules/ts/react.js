@@ -3,8 +3,9 @@ module.exports = {
     'react-app',
   ],
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   globals: {
     Atomics: 'readonly',
@@ -24,26 +25,6 @@ module.exports = {
     'markdown',
   ],
   rules: {
-    // General
-    // -- Error
-    // -- Warning
-    'class-methods-use-this': 1,
-    'no-else-return': 1,
-    'no-param-reassign': 1,
-    'no-underscore-dangle': 1,
-    'no-unused-vars': 1,
-    semi: [1, 'always'],
-    // -- Off
-    'implicit-arrow-linebreak': 0,
-    'consistent-return': 0,
-    'default-case': 0,
-    'lines-between-class-members': ['off'],
-    'no-shadow': 0,
-    'import/no-unresolved': 0,
-    'import/prefer-default-export': 0,
-    'prefer-destructuring': 0,
-    'no-console': 0,
-
     // React
     // -- Error
     'react/jsx-uses-vars': 2,
