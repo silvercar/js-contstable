@@ -22,29 +22,35 @@ These linting rules are largely derived from [Airbnb's Javascript Style Guide](h
 ## Installation
 Installation *will* be as easy as `npm i` once this module is published to NPM.
 
+`npm install @silvercar/js-constable --save-dev`
+
 ## Usage
 This is intended to serve as a general guideline for ESLint throughout Silvercar projects wherever JS/TS is concerned. If you need to change linting rules, go ahead, but please consider contributing it back to this repo so that other projects may benefit.
+
+You probably want to setup your project for easy linting in your `package.json` (assuming code to lint is inside a `src/` folder):
+
+```json
+"scripts": {
+  "lint": "eslint src/**/*.js src/**/*.jsx src/**/*.ts src/**/*.tsx"
+},
+```
+
+You should now be able to easily lint your project manually via `npm run lint`.
+
+Most IDEs should automatically pick up an `.eslintrc` and begin to automatically lint your code on-save or similar, but note that sometimes additional IDE-specific configuration might be needed such as [this example](https://create-react-app.dev/docs/setting-up-your-editor/).
 
 ### ~~Node 4.x+~~ WIP
 
 
 ### React
 
-You probably want to setup your project for easy linting in your `package.json`:
+Add to `.eslintrc` for Typescript:
 
-```{json}
-...
-"scripts": {
-  ...
-  "lint": "eslint src/**/*.js src/**/*.jsx src/**/*.ts src/**/*.tsx"
-  ...
-},
-...
+```json
+{
+  "extends": "@silvercar/js-constable/react-ts"
+}
 ```
-
-You should now be able to easily lint your project manually via `npm run lint`.
-
-Most IDEs should automatically pick up an `.eslintrc` and begin to automatically lint your code on-save or similar, but note that sometimes additional IDE-specific configuration might be needed such as [this example](https://create-react-app.dev/docs/setting-up-your-editor/).
 
 ---
 
@@ -79,5 +85,5 @@ Reach out at one of the following places:
 
 ## License
 
-- **[MIT](https://choosealicense.com/licenses/mit/)**
+- **[ISC](https://choosealicense.com/licenses/isc/)**
 - Copyright 2019 © [Silvercar](https://silvercar.com).

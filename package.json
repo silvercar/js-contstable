@@ -1,17 +1,17 @@
 {
-  "name": "js-contstable",
+  "name": "@silvercar/js-contstable",
   "version": "1.0.0",
-  "description": "Silvercar's JavaScript/TypeScript Style Guide",
+  "description": "Silvercar's JavaScript/TypeScript ESLint Config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules/.bin/eslint ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/silvercar/js-contstable.git"
   },
-  "author": "",
-  "license": "SEE LICENSE IN README.md",
+  "author": "Silvercar",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/silvercar/js-contstable/issues"
   },
@@ -27,5 +27,8 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
   }
 }
