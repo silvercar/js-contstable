@@ -1,5 +1,5 @@
 {
-  "name": "@silvercar/js-contstable",
+  "name": "@silvercar/js-constable",
   "version": "1.0.0",
   "description": "Silvercar's JavaScript/TypeScript ESLint Config",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/silvercar/js-contstable.git"
+    "url": "git+https://github.com/silvercar/js-constable.git"
   },
   "author": "Silvercar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/silvercar/js-contstable/issues"
+    "url": "https://github.com/silvercar/js-constable/issues"
   },
-  "homepage": "https://github.com/silvercar/js-contstable#readme",
+  "homepage": "https://github.com/silvercar/js-constable#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",

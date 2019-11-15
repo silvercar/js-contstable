@@ -48,7 +48,7 @@ Add to `.eslintrc` for Typescript:
 
 ```json
 {
-  "extends": "@silvercar/js-constable/react-ts"
+  "extends": "./node_modules/@silvercar/js-constable/react-ts"
 }
 ```
 

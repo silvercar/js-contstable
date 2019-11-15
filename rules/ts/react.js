@@ -1,7 +1,4 @@
 module.exports = {
-  extends: [
-    'react-app',
-  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -22,7 +19,7 @@ module.exports = {
     test: false,
   },
   plugins: [
-    'markdown',
+    'react',
   ],
   rules: {
     // React

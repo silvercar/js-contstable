@@ -3,6 +3,9 @@ module.exports = {
   extends: [
     'airbnb-typescript',
   ],
+  plugins: [
+    'markdown',
+  ],
   rules: {
     // Error
     '@typescript-eslint/indent': ['error', 2],
