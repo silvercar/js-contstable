@@ -2,4 +2,4 @@ const merge = require('lodash.merge');
 
 module.exports = merge({},
   require('./base-ts'),
-  require('./rules/ts/react'));
+  require('./rules/react'));
