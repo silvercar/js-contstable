@@ -28,6 +28,12 @@ module.exports = {
     'prefer-destructuring': 1,
     'lines-between-class-members': 1,
     'consistent-return': 1,
+    'max-lines': ['warn', { max: 500, skipBlankLines: true, skipComments: true }],
+    'max-classes-per-file': ['warn', 3],
+    'max-lines-per-function': ['warn', { max: 75 }],
+    'max-params': ['warn', 4],
+    complexity: ['warn', 15],
+    'max-statements': ['warn', 15],
 
     // -- Off
     'implicit-arrow-linebreak': 0,
