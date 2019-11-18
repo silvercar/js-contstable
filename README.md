@@ -65,10 +65,10 @@ Add to `.eslintrc` for Typescript:
   - This will be linted:
     ````markdown
     ```js
-    var myFirstAddend = 1;
-    var mySecondAddend = 2;
+    const myFirstAddend = 1;
+    const mySecondAddend = 2;
 
-    var mySum = myFirstAddend + mySecondAddend;
+    const mySum = myFirstAddend + mySecondAddend;
     console.log(mySum));
     ```
     ````
@@ -78,8 +78,6 @@ Add to `.eslintrc` for Typescript:
 ## Support
 
 Reach out at one of the following places:
-
-- Join the slack channel [`#linting`](https://silvercar.slack.com/app_redirect?channel=linting)
 
 ---
 
