@@ -15,6 +15,7 @@ module.exports = {
     // -- Error
     'no-shadow': 2,
     'default-case': 2,
+    'max-params': ['error', 4],
 
     // -- Warning
     'class-methods-use-this': 1,
@@ -31,7 +32,6 @@ module.exports = {
     'max-lines': ['warn', { max: 500, skipBlankLines: true, skipComments: true }],
     'max-classes-per-file': ['warn', 3],
     'max-lines-per-function': ['warn', { max: 75 }],
-    'max-params': ['warn', 4],
     complexity: ['warn', 15],
     'max-statements': ['warn', 15],
 
