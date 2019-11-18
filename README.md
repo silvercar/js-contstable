@@ -8,7 +8,6 @@
 - [Background](#background)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [~~Node 4.x+~~ WIP](#node-4x-wip)
   - [React](#react)
 - [FAQ](#faq)
 - [Support](#support)
@@ -38,9 +37,6 @@ You probably want to setup your project for easy linting in your `package.json` 
 You should now be able to easily lint your project manually via `npm run lint`.
 
 Most IDEs should automatically pick up an `.eslintrc` and begin to automatically lint your code on-save or similar, but note that sometimes additional IDE-specific configuration might be needed such as [this example](https://create-react-app.dev/docs/setting-up-your-editor/).
-
-### ~~Node 4.x+~~ WIP
-
 
 ### React
 
