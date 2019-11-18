@@ -2,7 +2,7 @@
 
 > Javascript/Typescript rules to ~~code~~ live by
 
-![JS Constable logo](https://i.imgur.com/lJ4lgLD.png)
+![JS Constable logo](./docs/jsconstable.jpg)
 
 ## Table of Contents <!-- omit in toc -->
 - [Background](#background)
