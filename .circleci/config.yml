@@ -5,43 +5,43 @@
 version: 2
 
 defaults: &defaults
-  working_directory: ~/repo
+  working_directory: ~/constable
   docker:
     - image: circleci/node:10
 
 jobs:
-  test:
-    <<: *defaults  
-    steps:
-      - checkout
+  # test:
+  #   <<: *defaults  
+  #   steps:
+  #     - checkout
 
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-	  # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+  #     - restore_cache:
+  #         keys:
+  #         - v1-dependencies-{{ checksum "package.json" }}
+	#   # fallback to using the latest cache if no exact match is found
+  #         - v1-dependencies-
 
-      - run: npm install
-      - run:
-          name: Run tests
-          command: npm test
+  #     - run: npm install
+  #     - run:
+  #         name: Run tests
+  #         command: npm test
 
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+  #     - save_cache:
+  #         paths:
+  #           - node_modules
+  #         key: v1-dependencies-{{ checksum "package.json" }}
 
-      - persist_to_workspace:
-          root: ~/repo
-          paths: .
+  #     - persist_to_workspace:
+  #         root: ~/constable
+  #         paths: .
   deploy:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/constable
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/constable/.npmrc
       - run:
           name: Publish package
           command: npm publish
