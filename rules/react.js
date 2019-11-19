@@ -21,6 +21,14 @@ module.exports = {
   plugins: [
     'react',
   ],
+  overrides: [
+    {
+      files: ['*.tsx'],
+      rules: {
+        'max-classes-per-file': ['warn', 1],
+      },
+    },
+  ],
   rules: {
     // React
     // -- Error
