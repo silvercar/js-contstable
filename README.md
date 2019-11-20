@@ -10,7 +10,6 @@
 - [Usage](#usage)
   - [React](#react)
 - [FAQ](#faq)
-- [Support](#support)
 - [License](#license)
 
 ## Background
@@ -69,11 +68,6 @@ Add to `.eslintrc` for Typescript:
     ```
     ````
   - This can be prevented by using `<!-- eslint-skip -->` above those same code blocks
-
-
-## Support
-
-Reach out at one of the following places:
 
 ---
 

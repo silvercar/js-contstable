@@ -29,7 +29,7 @@ module.exports = {
     'prefer-destructuring': 1,
     'lines-between-class-members': 1,
     'consistent-return': 1,
-    'max-lines': ['warn', { max: 500, skipBlankLines: true, skipComments: true }],
+    'max-lines': ['warn', { max: 250, skipBlankLines: true, skipComments: true }],
     'max-classes-per-file': ['warn', 3],
     'max-lines-per-function': ['warn', { max: 75 }],
     complexity: ['warn', 15],
