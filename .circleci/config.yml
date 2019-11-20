@@ -4,14 +4,11 @@
 #
 version: 2
 
-defaults: &defaults
-  working_directory: ~/constable
-  docker:
-    - image: circleci/node:10
-
 jobs:
   deploy:
-    <<: *defaults
+    working_directory: ~/constable
+    docker:
+      - image: circleci/node:10
     steps:
       - attach_workspace:
           at: ~/constable
