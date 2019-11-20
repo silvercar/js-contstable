@@ -5,7 +5,7 @@
 version: 2
 
 jobs:
-  deploy:
+  build:
     working_directory: ~/constable
     docker:
       - image: circleci/node:10
