@@ -18,4 +18,4 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/constable/.npmrc
       - run:
           name: Publish package
-          command: npm publish
+          command: npm publish --access public
