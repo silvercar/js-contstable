@@ -6,6 +6,9 @@ version: 2
 
 jobs:
   build:
+    branches:
+      only:
+        - master
     working_directory: ~/constable
     docker:
       - image: circleci/node:10
@@ -18,4 +21,4 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/constable/.npmrc
       - run:
           name: Publish package
-          command: npm publish --access public
+          command: npm publish --access public  
