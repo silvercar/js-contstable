@@ -13,6 +13,7 @@ module.exports = {
   },
   rules: {
     // -- Error
+    quotes: ['error', 'single', { allowTemplateLiterals: true }],
 
     // -- Warning
     'class-methods-use-this': 1,
