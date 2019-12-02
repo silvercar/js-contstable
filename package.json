@@ -1,0 +1,34 @@
+{
+  "name": "@silvercar/js-constable",
+  "version": "1.0.0",
+  "description": "Silvercar's JavaScript/TypeScript ESLint Config",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvercar/js-constable.git"
+  },
+  "author": "Silvercar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silvercar/js-constable/issues"
+  },
+  "homepage": "https://github.com/silvercar/js-constable#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-typescript": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-markdown": "^1.0.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
+  }
+}
