@@ -2,16 +2,14 @@
 
 > Javascript/Typescript rules to ~~code~~ live by
 
-![JS Constable logo](https://i.imgur.com/lJ4lgLD.png)
+![JS Constable logo](./docs/jsconstable.jpg)
 
 ## Table of Contents <!-- omit in toc -->
 - [Background](#background)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [~~Node 4.x+~~ WIP](#node-4x-wip)
   - [React](#react)
 - [FAQ](#faq)
-- [Support](#support)
 - [License](#license)
 
 ## Background
@@ -39,9 +37,6 @@ You should now be able to easily lint your project manually via `npm run lint`.
 
 Most IDEs should automatically pick up an `.eslintrc` and begin to automatically lint your code on-save or similar, but note that sometimes additional IDE-specific configuration might be needed such as [this example](https://create-react-app.dev/docs/setting-up-your-editor/).
 
-### ~~Node 4.x+~~ WIP
-
-
 ### React
 
 Add to `.eslintrc` for Typescript:
@@ -65,21 +60,14 @@ Add to `.eslintrc` for Typescript:
   - This will be linted:
     ````markdown
     ```js
-    var myFirstAddend = 1;
-    var mySecondAddend = 2;
+    const myFirstAddend = 1;
+    const mySecondAddend = 2;
 
-    var mySum = myFirstAddend + mySecondAddend;
+    const mySum = myFirstAddend + mySecondAddend;
     console.log(mySum));
     ```
     ````
   - This can be prevented by using `<!-- eslint-skip -->` above those same code blocks
-
-
-## Support
-
-Reach out at one of the following places:
-
-- Join the slack channel [`#linting`](https://silvercar.slack.com/app_redirect?channel=linting)
 
 ---
 

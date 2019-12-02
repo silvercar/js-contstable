@@ -21,6 +21,14 @@ module.exports = {
   plugins: [
     'react',
   ],
+  overrides: [
+    {
+      files: ['*.tsx'],
+      rules: {
+        'max-classes-per-file': ['warn', 1],
+      },
+    },
+  ],
   rules: {
     // React
     // -- Error
@@ -30,8 +38,9 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 1,
     'react/no-multi-comp': [1, { ignoreStateless: true }],
     'react-hooks/exhaustive-deps': 'warn',
+    'react/destructuring-assignment': 1,
+
     // -- Off
-    'react/destructuring-assignment': 0,
     'react/no-array-index-key': 0,
     'react/prefer-stateless-function': 0,
   },

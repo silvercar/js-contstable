@@ -13,7 +13,10 @@ module.exports = {
   },
   rules: {
     // -- Error
-    quotes: ['error', 'single', { allowTemplateLiterals: true }],
+    quotes: ['error', 'single', { allowTemplateLiterals: true }]
+    'no-shadow': 2,
+    'default-case': 2,
+    'max-params': ['error', 4],
 
     // -- Warning
     'class-methods-use-this': 1,
@@ -22,16 +25,19 @@ module.exports = {
     'no-underscore-dangle': 1,
     'no-unused-vars': 1,
     semi: [1, 'always'],
+    'import/no-unresolved': 1,
+    'import/prefer-default-export': 1,
+    'prefer-destructuring': 1,
+    'lines-between-class-members': 1,
+    'consistent-return': 1,
+    'max-lines': ['warn', { max: 250, skipBlankLines: true, skipComments: true }],
+    'max-classes-per-file': ['warn', 3],
+    'max-lines-per-function': ['warn', { max: 75 }],
+    complexity: ['warn', 15],
+    'max-statements': ['warn', 15],
 
     // -- Off
     'implicit-arrow-linebreak': 0,
-    'consistent-return': 0,
-    'default-case': 0,
-    'lines-between-class-members': ['off'],
-    'no-shadow': 0,
-    'import/no-unresolved': 0,
-    'import/prefer-default-export': 0,
-    'prefer-destructuring': 0,
     'no-console': 0,
   },
 };
