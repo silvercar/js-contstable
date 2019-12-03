@@ -13,6 +13,7 @@ module.exports = {
   },
   rules: {
     // -- Error
+    quotes: ['error', 'single', { allowTemplateLiterals: true }]
     'no-shadow': 2,
     'default-case': 2,
     'max-params': ['error', 4],

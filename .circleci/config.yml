@@ -1,0 +1,32 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check {{ '/2.0/language-javascript/' | docs_url }} for more details
+#
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/constable
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/constable
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/constable/.npmrc
+      - run:
+          name: Publish package
+          command: npm publish --access public  
+
+workflows:
+  version: 2
+  build-publish:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/
