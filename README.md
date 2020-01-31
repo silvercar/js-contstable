@@ -37,6 +37,8 @@ You should now be able to easily lint your project manually via `npm run lint`.
 
 Most IDEs should automatically pick up an `.eslintrc` and begin to automatically lint your code on-save or similar, but note that sometimes additional IDE-specific configuration might be needed such as [this example](https://create-react-app.dev/docs/setting-up-your-editor/).
 
+Make sure to include a proper `.eslintignore` file to avoid long linting times.
+
 ### React
 
 Add to `.eslintrc` for Typescript:
