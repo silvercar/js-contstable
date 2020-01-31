@@ -1,6 +1,6 @@
 {
   "name": "@silvercar/js-constable",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Silvercar's JavaScript/TypeScript ESLint Config",
   "main": "index.js",
   "scripts": {
