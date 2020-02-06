@@ -41,6 +41,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/destructuring-assignment': 1,
     'no-shadow': 1,
+    'import/no-cycle': 1,
     // -- Off
     'react/no-array-index-key': 0,
     'react/prefer-stateless-function': 0,
