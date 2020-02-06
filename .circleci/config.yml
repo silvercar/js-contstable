@@ -14,6 +14,10 @@ jobs:
       - attach_workspace:
           at: ~/constable
       - run:
+        name: Linting
+        command: |
+          npm run lint
+      - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/constable/.npmrc
       - run:

@@ -4,6 +4,7 @@
   "description": "Silvercar's JavaScript/TypeScript ESLint Config",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./ --ext .tsx,.ts,.js,.jsx",
     "test": "node_modules/.bin/eslint ."
   },
   "repository": {
