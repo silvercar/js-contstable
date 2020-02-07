@@ -14,9 +14,11 @@ jobs:
       - attach_workspace:
           at: ~/constable
       - run:
-        name: Linting
-        command: |
-          npm run lint
+          name: Install dependencies
+          command: npm run install
+      - run:
+          name: Linting
+          command: npm run lint
   build:
     working_directory: ~/constable
     docker:
