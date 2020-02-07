@@ -15,7 +15,7 @@ jobs:
           at: ~/constable
       - run:
           name: Install dependencies
-          command: npm run install
+          command: npm install
       - run:
           name: Linting
           command: npm run lint
