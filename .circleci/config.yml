@@ -11,8 +11,6 @@ jobs:
       - image: circleci/node:10
     steps:
       - checkout
-      - attach_workspace:
-          at: ~/constable
       - run:
           name: Install dependencies
           command: npm install
@@ -36,7 +34,7 @@ jobs:
 
 workflows:
   version: 2
-  main:
+  build-lint:
     jobs:
       - lint
       - build:
