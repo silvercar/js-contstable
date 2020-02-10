@@ -5,6 +5,18 @@
 version: 2
 
 jobs:
+  lint:
+    working_directory: ~/constable
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Linting
+          command: npm run lint
   build:
     working_directory: ~/constable
     docker:
@@ -18,13 +30,16 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/constable/.npmrc
       - run:
           name: Publish package
-          command: npm publish --access public  
+          command: npm publish --access public
 
 workflows:
   version: 2
-  build-publish:
+  build-lint:
     jobs:
+      - lint
       - build:
+          requires:
+            - lint
           filters:
             tags:
               only: /.*/
