@@ -38,8 +38,6 @@ workflows:
     jobs:
       - lint
       - build:
-          requires:
-            - lint
           filters:
             tags:
               only: /.*/
