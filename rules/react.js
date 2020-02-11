@@ -45,10 +45,6 @@ module.exports = {
     // -- Off
     'react/no-array-index-key': 0,
     'react/prefer-stateless-function': 0,
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {},
-    },
+    'react/prop-types': 0,
   },
 };
