@@ -18,14 +18,12 @@ The goal of this project is to not only get clean code, but also a more uniforml
 These linting rules are largely derived from [Airbnb's Javascript Style Guide](https://github.com/airbnb/javascript) with some minor modifications mostly related to strictness (such as warning instead of errors) for the sake of development speed. Much of the linting rules are covered in-depth in in the Airbnb Style Guide.
 
 ## Installation
-Installation *will* be as easy as `npm i` once this module is published to NPM.
-
 `npm install @silvercar/js-constable --save-dev`
 
-## Usage
+## Recommended Usage
 This is intended to serve as a general guideline for ESLint throughout Silvercar projects wherever JS/TS is concerned. If you need to change linting rules, go ahead, but please consider contributing it back to this repo so that other projects may benefit.
 
-You probably want to setup your project for easy linting in your `package.json` (assuming code to lint is inside a `src/` folder):
+Add this lint script within `package.json` (assuming code to lint is inside a `src/` folder):
 
 ```json
 "scripts": {
@@ -33,7 +31,7 @@ You probably want to setup your project for easy linting in your `package.json` 
 },
 ```
 
-You should now be able to easily lint your project manually via `npm run lint`.
+Easily lint your project manually via `npm run lint`.
 
 Most IDEs should automatically pick up an `.eslintrc` and begin to automatically lint your code on-save or similar, but note that sometimes additional IDE-specific configuration might be needed such as [this example](https://create-react-app.dev/docs/setting-up-your-editor/).
 
