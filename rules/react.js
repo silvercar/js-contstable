@@ -40,7 +40,6 @@ module.exports = {
     'react/no-multi-comp': [1, { ignoreStateless: true }],
     'react-hooks/exhaustive-deps': 'warn',
     'react/destructuring-assignment': 1,
-    'no-shadow': 1,
     'import/no-cycle': 1,
     // -- Off
     'react/no-array-index-key': 0,
